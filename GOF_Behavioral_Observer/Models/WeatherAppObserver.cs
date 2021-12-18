@@ -10,10 +10,21 @@ namespace GOF_Behavioral_Observer.Models
     class WeatherAppObserver : IObserver
     {
         private int _temperature;
+        private readonly ISubject _subject;
+        public WeatherAppObserver(ISubject subject)
+        {
+            _subject = subject;
+            _subject.RegisterObserver(this);
+        }
         public void Update(int temperature)
         {
             _temperature = temperature;
             Display();
+        }
+
+        public void UnregisterMyself()
+        {
+            _subject.RemoveObserver(this);
         }
 
         public void Display()

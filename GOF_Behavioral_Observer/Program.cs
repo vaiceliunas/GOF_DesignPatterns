@@ -9,15 +9,12 @@ namespace GOF_Behavioral_Observer
         {
             var sub = new WeatherSubject();
 
-            var obs1 = new NationalWeatherWebsiteObserver();
-            var obs2 = new WeatherAppObserver();
-
-            sub.RegisterObserver(obs1);
-            sub.RegisterObserver(obs2);
+            var obs1 = new NationalWeatherWebsiteObserver(sub);
+            var obs2 = new WeatherAppObserver(sub);
 
             sub.TemperatureChanged(50);
             Console.WriteLine(".....");
-            sub.RemoveObserver(obs2);
+            obs2.UnregisterMyself();
 
             sub.TemperatureChanged(80);
 
