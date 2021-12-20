@@ -14,6 +14,8 @@ namespace GOF_Behavioral_Observer
 
             sub.TemperatureChanged(50);
             Console.WriteLine(".....");
+            obs2.PullTemperature();
+            Console.WriteLine(".....");
             obs2.UnregisterMyself();
 
             sub.TemperatureChanged(80);

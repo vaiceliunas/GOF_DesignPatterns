@@ -41,5 +41,9 @@ namespace GOF_Behavioral_Observer.Models
                 o.Update(_temperature);
             }
         }
+        public int GetTemperature()
+        {
+            return _temperature;
+        }
     }
 }

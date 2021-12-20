@@ -22,6 +22,17 @@ namespace GOF_Behavioral_Observer.Models
             Display();
         }
 
+        public void PullTemperature()
+        {
+            if (_subject is WeatherSubject)
+            {
+                var sub = (WeatherSubject) _subject;
+                _temperature = sub.GetTemperature();
+                Display();
+            }
+
+        }
+
         public void UnregisterMyself()
         {
             _subject.RemoveObserver(this);
