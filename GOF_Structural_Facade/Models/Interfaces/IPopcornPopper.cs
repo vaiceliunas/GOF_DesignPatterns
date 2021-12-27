@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GOF_Structural_Facade.Models.Interfaces
 {
-    interface IPopcornPopper
+    public interface IPopcornPopper
     {
         public void TurnOn();
         public void Make();
