@@ -13,6 +13,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GOF_Creational_Singleton", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GOF_Behavioral_Command", "GOF_Behavioral_Command\GOF_Behavioral_Command.csproj", "{B3DD56C7-0A44-4800-ACC5-1198CA000A59}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GOF_Structural_Adapter", "GOF_Structural_Adapter\GOF_Structural_Adapter.csproj", "{D6509869-D482-439C-826D-351F302E9F2C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{B3DD56C7-0A44-4800-ACC5-1198CA000A59}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B3DD56C7-0A44-4800-ACC5-1198CA000A59}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B3DD56C7-0A44-4800-ACC5-1198CA000A59}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6509869-D482-439C-826D-351F302E9F2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6509869-D482-439C-826D-351F302E9F2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6509869-D482-439C-826D-351F302E9F2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6509869-D482-439C-826D-351F302E9F2C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
