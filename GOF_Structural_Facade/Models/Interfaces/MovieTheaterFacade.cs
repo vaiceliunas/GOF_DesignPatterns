@@ -20,9 +20,18 @@ namespace GOF_Structural_Facade.Models.Interfaces
 
         public void WatchMovie()
         {
+            _popcornPopper.TurnOn();
+            _popcornPopper.Make();
             _pcStation.TurnOn();
             _pcStation.RecognizeMovieName();
             _pcStation.DownloadMovie();
+            _pcStation.RunVlc();
+            _pcStation.SetMovie();
+            _screen.TurnOn();
+            _screen.VolumeUp();
+            _screen.SetMovieMode();
+            _popcornPopper.PutIntoBox();
+            _pcStation.Play();
         }
     }
 }
