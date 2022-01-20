@@ -92,5 +92,15 @@ namespace GOF_Behavioral_State.Models
         {
             return _count;
         }
+
+        public void Refill(int amount)
+        {
+            _count = _count + amount;
+
+            if (_count > 0)
+                _state = _noQuarterState;
+            else
+                _state = _soldOutState;
+        }
     }
 }
